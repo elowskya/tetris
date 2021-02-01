@@ -1,5 +1,5 @@
 <h1>Classic Tetris </h1>
-<img src="tetris-full-screen.jpg">
+<img src="tetris-full-screen.JPG">
 
 <h2>DESCRIPTION</h2>
 <p>Arcade style tetris using pure HTML, CSS, & JavaScript</p>
