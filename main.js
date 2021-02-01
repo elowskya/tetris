@@ -227,17 +227,22 @@ const player = {
     score: 0,
 }
 
-document.addEventListener('keydown', event => {
-    if (event.keyCode === 37) {
-        playerMove(-1);
-    } else if (event.keyCode === 39) {
-        playerMove(1);
-    } else if (event.keyCode === 40) {
-       playerDrop();
-    } else if (event.keyCode  === 38) {
-        playerRotate(1);
-    }
-})
+// buttons functionality
+document.getElementById('drop').addEventListener('click', function(e){
+    playerDrop();
+});
+
+document.getElementById('left').addEventListener('click', function(e){
+    playerMove(-1);
+});
+
+document.getElementById('rotate').addEventListener('click', function(e){
+    playerRotate(1);
+});
+
+document.getElementById('right').addEventListener('click', function(e){
+    playerMove(1);
+});
 
 playerReset();
 updateScore();

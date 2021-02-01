@@ -20,28 +20,53 @@
             color: #F538FF;
         }
 
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 580px) {
             #score {
                 position: relative;
             }
         }
 
-        p {
-            font-size: 4vh;
-            padding: 0;
-            margin: 0;
-        }
-
         canvas {
             border: solid .2em #fff;
-            height: 85vh;
+            height: 75vh;
         }
+
+        button {
+            border-radius: 50%;
+            font-weight: 800;
+            display: inline-block;
+            background-color: #0DC2FF;
+            color: white;
+            padding: 2%;
+            box-shadow: 10px 10px 10px rgba(7, 7, 7, 0.95);
+        }
+
+        #drop {
+            background-color: #F538FF;
+            font-weight: 800;
+        }
+
+        #rotate {
+            background-color: #FFE138;
+        }
+
+        #left {
+            background-color: #0DFF72;
+        }
+     
     </style>
 </head>
 <body>
     <div id="score"></div>
+
     <canvas id="tetris" width="240" height="400"></canvas>
-    <p>Hint: Use the Arrow Keys to Move the Piece</p>
+
+    <div>
+        <button id="left">Left</button>
+        <button id="rotate">Rotate</button>
+        <button id="right">Right</button>
+        <button id="drop">Drop</button>
+    </div>
     
     <script src="main.js"></script>
 </body>
